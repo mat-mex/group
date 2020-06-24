@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Roboto, serif;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('./fonts/Roboto-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: local('Roboto Medium'), url('./fonts/Roboto-Medium.ttf') format('ttf');
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-only {
+    display: initial;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}

@@ -13,7 +13,7 @@ export default function FileInput(props: Props) {
 
     const handle = (event: ChangeEvent<HTMLInputElement>) => {
         const files: FileList | null = event.target.files;
-        if (files !== null)
+        if (files !== null && files.length > 0)
             props.handle(files);
     }
 
@@ -29,3 +29,4 @@ export default function FileInput(props: Props) {
         />
     );
 }
+
